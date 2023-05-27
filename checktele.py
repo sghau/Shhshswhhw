@@ -361,20 +361,15 @@ for t in range(100):
     le = threading.Thread(target=gen_user)
     x1 = threading.Thread(target=_)
     le1 = threading.Thread(target=gen_user)
-    x2 = threading.Thread(target=_)
-    le2 = threading.Thread(target=gen_user)
     x.start()
     le.start()
     x1.start()
     le1.start()
-    x2.start()
-    le2.start()
+
     
     Threads.append(x)
     Threads.append(le)
     Threads.append(x1)
     Threads.append(le1)
-    Threads.append(x2)
-    Threads.append(le2)
 for Th in Threads:
     Th.join()
