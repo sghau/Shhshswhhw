@@ -374,11 +374,9 @@ for t in range(100):
     le = threading.Thread(target=gen_user)
     x.start()
     le.start()
-    x1.start()
-    le1.start()
+  
+   
     Threads.append(x)
-    Threads.append(x1)
     Threads.append(le)
-    Threads.append(le1)
 for Th in Threads:
     Th.join()
